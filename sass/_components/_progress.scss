@@ -1,0 +1,14 @@
+.progress {
+    height: 25px;
+    margin: 0 auto;
+
+    &-bar {
+        background-color: $yellow;
+        opacity: .65;
+
+        color: $black;
+        text-shadow: 1px 1px 2px $white;
+        text-align: start;
+        padding-left: 10px; 
+    }
+}

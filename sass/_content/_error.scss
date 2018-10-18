@@ -1,0 +1,11 @@
+// error form
+span.error {
+    font-size: 12px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px $yellow;
+}
+
+input.error,
+.textarea.error {
+    border-color: $yellow;
+}
