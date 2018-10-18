@@ -1,7 +1,7 @@
 // Bootstrap
 @import "_bootstrap/functions";
-@import "bootstrap/variables";
-@import "_bootstrap/mixins/";
+@import "_bootstrap/mixins";
+@import "_bootstrap/variables";
 
 // Base
 @import "_base/base";
@@ -13,7 +13,7 @@
 // Contents
 @import "_content/hr";
 @import "_content/images";
-@import "_content/error";
+@import "_content/error"; 
 
 // Components
 @import "_components/card";
