@@ -52,18 +52,16 @@ input.error,
 .textarea.error {
   border-color: #ffc107; }
 
-.card {
-  background-color: rgba(255, 193, 7, 0.5); }
-  .card-img img {
-    opacity: .75;
-    height: 100px; }
-  .card-title {
-    opacity: 1;
-    text-shadow: 2px 2px 2px #000;
-    font-weight: bold; }
-  .card-text {
-    opacity: 1;
-    text-shadow: 2px 2px 2px #000; }
+.card-img img {
+  opacity: .75;
+  height: 100px; }
+.card-title {
+  opacity: 1;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: bold; }
+.card-text {
+  opacity: 1;
+  text-shadow: 2px 2px 2px #000; }
 
 .progress {
   height: 25px;
