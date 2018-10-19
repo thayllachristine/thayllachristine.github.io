@@ -61,5 +61,5 @@ typings/
 .next
 
 # sass/css
-*.sass-sache/
-*css.map
+.sass-sache/
+*.css.map
