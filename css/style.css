@@ -52,17 +52,6 @@ input.error,
 .textarea.error {
   border-color: #ffc107; }
 
-.card-img img {
-  opacity: .75;
-  height: 100px; }
-.card-title {
-  opacity: 1;
-  text-shadow: 2px 2px 2px #000;
-  font-weight: bold; }
-.card-text {
-  opacity: 1;
-  text-shadow: 2px 2px 2px #000; }
-
 .progress {
   height: 25px;
   margin: 0 auto; }
@@ -73,6 +62,17 @@ input.error,
     text-shadow: 1px 1px 2px #fff;
     text-align: start;
     padding-left: 10px; }
+
+.card-img img {
+  opacity: .75;
+  height: 100px; }
+.card-title {
+  opacity: 1;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: bold; }
+.card-text {
+  opacity: 1;
+  text-shadow: 2px 2px 2px #000; }
 
 .carousel-inner .carousel-item img {
   height: 35vh;
@@ -87,5 +87,10 @@ input.error,
   opacity: .5; }
   .btn-send:hover {
     opacity: .9; }
+
+.modal-body-img img {
+  width: 465px; }
+.modal-body-rep a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
