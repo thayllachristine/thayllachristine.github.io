@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Principal Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/icons/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/icons/favicon/safari-pinned-tab.svg" color="#000000">
+    <meta name="apple-mobile-web-app-title" content="Portf&oacute;lio - Thaylla">
+    <meta name="application-name" content="Portf&oacute;lio - Thaylla">
+    <meta name="msapplication-TileColor" content="#ffce35">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#f5d675">
+
+    <!-- CSS + Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -273,7 +286,7 @@
                 <div class="col-lg-9">
                     <h2 class="text-center">Contato</h2>
                     <hr>
-                    <form class="contact-form">
+                    <form class="contact-form" name="contact" netlify>
                         <div class="form-group form-row">
                             <div class="col col-form-label-sm">
                                 <label for="firstNameInput" class="col-form-label-sm">Nome</label>
@@ -341,21 +354,54 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="modal-body-img">
+                        <img src="assets/portfolio/mundo-gelado.png" alt="Página inicial do projeto Mundo Gelado.">
+                    </div>
+                    <p class="mt-3 text-justify">
+                        O projeto <span class="font-weight-bold">Mundo Gelado</span> foi desenvolvido para aplicar o
+                        conteúdo de responsividade durante o segundo módulo do curso de Front-End da Reprograma.
+                    </p>
+                    <div class="modal-body-rep">
+                        <span class="font-weight-bold">Repositório:</span>
+                        <span>github.com/reprograma/responsivo</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- JS -->
-    <script src="js/jquery.slim.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Projeto: Mundo Gelado</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body-img">
+                            <img src="assets/portfolio/mundo-gelado.png" alt="Página de uma das mulheres maravilhosas  do projeto Mundo Gelado.">
+                        </div>
+                        <p class="mt-3 text-justify">
+                            O projeto <span class="font-weight-bold">Mundo Gelado</span> foi desenvolvido para aplicar
+                            o
+                            conteúdo de responsividade durante o segundo módulo do curso de Front-End da Reprograma.
+                        </p>
+                        <div class="modal-body-rep">
+                            <span class="font-weight-bold">Repositório:</span>
+                            <a href="http://github.com/reprograma/responsivo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src="js/jquery.slim.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>
@@ -364,3 +410,4 @@
 <!-- icons: https://www.flaticon.com/free-icon/programmer_1119021#term=development&page=3&position=72 -->
 <!-- img em alta: https://unsplash.com/ -->
 <!-- https://unsplash.com/photos/RPmWEtZLh7U -->
+<!-- favicon : https://realfavicongenerator.net/ -->
