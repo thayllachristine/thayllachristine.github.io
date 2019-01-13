@@ -47,10 +47,13 @@
                         <a class="nav-link" href="#">Página Inicial<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre mim</a>
+                        <a class="nav-link" href="index.html#aboutMe">Sobre mim</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="index.html#experiences">Experiências</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -68,26 +71,21 @@
     <main class="my-5">
         <div class="container">
             <!-- Sobre mim -->
-            <section class="about-me my-5">
+            <section id="aboutMe" class="about-me my-2">
                 <h2 class="text-center">Sobre mim</h2>
                 <hr>
-                <div class="row">
+                <div class="row justify-content-center">
                     <!-- Descrição -->
-                    <div class="description col-lg-9">
+                    <div class="description col-lg-7">
                         <article>
-                            Tecnóloga formada em Análise e Desenvolvimento de Sistemas na FATEC Zona Sul no ano de
-                            2015. Tem entusiasmo pela área de Projetos/Processos, a qual busca oportunidade para
-                            atuação, para desenvolvimento de habilidades e experiência. <br>
-
-                            Três anos de experiência na área de Tecnologia da Informação, atuando nas áreas de suporte
-                            ao usuário e gerenciamento de projetos. Sempre entregando resultados de maneira eficiente e
-                            eficaz, assim garantindo a satisfação do cliente. <br>
-
-                            Competências técnicas em informática: Linguagens de Programação, Banco de Dados, UML,
-                            Engenharia de Software, Gestão de Projetos, Análise de Negócios, Processos etc. <br>
-
-                            Disposta em adquirir novos conhecimentos; pró-atividade e dedicação ao trabalho proposto;
-                            fácil comunicação e compreensão ao cliente.
+                            Sempre em busca de entender o todo, desde a ideia até seu pleno funcionamento, me
+                            interessei pela área de Tecnologia quando pequena e assim decidi por minha carreira. Sou
+                            tecnóloga formada em Análise e Desenvolvimento de Sistemas e, ao longo desta jornada,
+                            adquiri experiências com atendimento/suporte ao cliente e competências em Gestão de
+                            Processos e Projetos. Comecei a me dedicar a área de desenvolvimento Front-End, por ter um
+                            contato maior com o cliente e uma "facilidade" em alinhar tanto as minhas expectativas,
+                            quanto as deles no trabalho proposto. Acho mágico transformar uma ideia em realidade
+                            através dos meus conhecimentos técnicos.
                         </article>
                     </div>
                     <!-- Foto -->
@@ -97,7 +95,8 @@
                 </div>
             </section>
 
-            <section class="habilities my-5">
+            <!-- Habilidades -->
+            <section id="habilities" class="habilities my-5">
                 <div class="container row justify-content-center">
                     <div class="col-lg-10">
                         <h2 class="text-center">Habilidades</h2>
@@ -131,6 +130,10 @@
                                 aria-valuemin="0" aria-valuemax="100">jQuery</div>
                         </div>
                         <div class="progress mb-2">
+                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60"
+                                aria-valuemin="0" aria-valuemax="100">React</div>
+                        </div>
+                        <div class="progress mb-2">
                             <div class="progress-bar bg-warning" role="progressbar" style="width: 65%" aria-valuenow="65"
                                 aria-valuemin="0" aria-valuemax="100">UX</div>
                         </div>
@@ -148,46 +151,40 @@
         </div>
     </main>
 
-
-    <section class="experiences my-3">
-        <div class="container">
+    <div class="container">
+        <section id="       " class="experiences my-5">
             <!-- Experiências -->
             <h2 class="text-center">Experiências</h2>
             <hr>
-            <div class="row">
+            <div class="row justify-content-center">
                 <!-- Portfólio -->
-                <div class="col-lg-6">
-                    <h3>Porfólio</h3>
-                    <div class="portfolio carousel slide" data-ride="carousel">
+                <div class="col-lg-5">
+                    <h3>Porfólio/Projetos</h3>
+                    <div id="portfolioSlider" class="portfolio carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#portfolioSlider" data-slide-to="0" class="active"></li>
+                            <li data-target="#portfolioSlider" data-slide-to="1"></li>
+                            <li data-target="#portfolioSlider" data-slide-to="2"></li>
+                            <li data-target="#portfolioSlider" data-slide-to="3"></li>
+                            <li data-target="#portfolioSlider" data-slide-to="4"></li>
+                        </ol>
                         <div class="carousel-inner">
+                            <!-- Portfólio - Projeto: M de Maravilhosas -->
                             <div class="card text-white carousel-item active">
-                                <img class="card-img" src="assets/portfolio/mundo-gelado.png" alt="Projeto: Mundo Gelado">
+                                <img class="card-img" src="assets/portfolio/m-maravilhosas-demi-lovato.JPG" alt="Projeto: M de Maravilhosa.">
                                 <div class="card-img-overlay">
-                                    <h5 class="card-title">Projeto: Mundo Gelado</h5>
-                                    <!-- Modal com informações dos projetos -->
-                                    <div class="btn-infos mt-5 d-flex justify-content-end" data-toggle="modal"
-                                        data-target="#exampleModalCenter">
-                                        <button type="button" class="btn btn-infos btn-light">+ infos</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Portfólio - Projeto 1: M de Maravilhosas -->
-                            <div class="card text-white carousel-item">
-                                <img class="card-img" src="assets/portfolio/mundo-gelado.png" alt="Projeto 1: M de Maravilhosa.">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title">Projeto 1: M de Maravilhosa</h5>
-                                    <div class="btn-infos d-flex justify-content-end align-self-end">
+                                    <h5 class="card-title">M de Maravilhosa</h5>
+                                    <div class="btn-infos d-flex justify-content-end" data-toggle="modal" data-target="#modalMMaravilhosa">
                                         <button type="button" class="btn btn-infos btn-light">+ infos</button>
                                     </div>
                                 </div>
                             </div>
                             <!-- Portfólio - Projeto 2: To Do List -->
                             <div class="card text-white carousel-item">
-                                <img class="card-img" src="assets/portfolio/mundo-gelado.png" alt="Projeto 2: To Do List.">
+                                <img class="card-img" src="assets/portfolio/to-do.png" alt="Projeto: To Do List.">
                                 <div class="card-img-overlay">
-                                    <h5 class="card-title">Projeto 2: To Do List</h5>
-                                    <div class="btn-infos d-flex justify-content-end">
+                                    <h5 class="card-title">To Do List</h5>
+                                    <div class="btn-infos d-flex justify-content-end" data-toggle="modal" data-target="#modalToDoList">
                                         <button type="button" class="btn btn-infos btn-light">+ infos</button>
                                     </div>
                                 </div>
@@ -196,18 +193,28 @@
                             <div class="card text-white carousel-item">
                                 <img class="card-img" src="assets/portfolio/campo-minado.png" alt="Projeto: Campo Minado.">
                                 <div class="card-img-overlay">
-                                    <h5 class="card-title">Projeto: Campo Minado</h5>
-                                    <div class="btn-infos d-flex justify-content-end">
+                                    <h5 class="card-title">Campo Minado</h5>
+                                    <div class="btn-infos d-flex justify-content-end" data-toggle="modal" data-target="#modalCampoMinado">
                                         <button type="button" class="btn btn-infos btn-light">+ infos</button>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Portfólio - Projeto: Portfólio em Bootstrap -->
+                            <!-- Portfólio - Projeto: Roda Livre -->
                             <div class="card text-white carousel-item">
-                                <img class="card-img" src="assets/portfolio/campo-minado.png" alt="Projeto: Portfólio em Bootstrap.">
+                                <img class="card-img" src="assets/portfolio/roda-livre.JPG" alt="Projeto: Roda Livre.">
                                 <div class="card-img-overlay">
-                                    <h5 class="card-title">Projeto: Portfólio em Bootstrap</h5>
-                                    <div class="btn-infos d-flex justify-content-end">
+                                    <h5 class="card-title">Roda Livre</h5>
+                                    <div class="btn-infos d-flex justify-content-end" data-toggle="modal" data-target="#modalRodaLivre">
+                                        <button type="button" class="btn btn-infos btn-light">+ infos</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Portfólio - Projeto: tá chovendo? -->
+                            <div class="card text-white carousel-item">
+                                <img class="card-img" src="assets/portfolio/ta-chovendo.JPG" alt="Projeto: tá chovendo?.">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">tá chovendo?</h5>
+                                    <div class="btn-infos d-flex justify-content-end" data-toggle="modal" data-target="#modalTaChovendo">
                                         <button type="button" class="btn btn-infos btn-light">+ infos</button>
                                     </div>
                                 </div>
@@ -216,72 +223,68 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    <!-- Eventos -->
-                    <h3>Eventos</h3>
-                    <div class="carousel slide" data-ride="carousel">
+                <div class="col-lg-5">
+                    <!-- Eventos/Cursos -->
+                    <h3>Eventos/Cursos</h3>
+                    <div id="eventsSlider" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#eventsSlider" data-slide-to="0" class="active"></li>
+                            <li data-target="#eventsSlider" data-slide-to="1"></li>
+                            <li data-target="#eventsSlider" data-slide-to="2"></li>
+                            <li data-target="#eventsSlider" data-slide-to="3"></li>
+                            <li data-target="#eventsSlider" data-slide-to="4"></li>
+                        </ol>
                         <div class="events carousel-inner">
-                            <!-- Eventos - Aprenda a Programar em um final de semana -->
+                            <!-- Eventos/Cursos - Aprenda a Programar em um final de semana -->
                             <div class="card text-white carousel-item active">
-                                <img class="card-img" src="assets/events/fds-2018.jpeg" alt="Formação de várias pessoas em um curso da Mastertech">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title">Aprenda a programar em um final de semana</h5>
-                                    <p class="card-text">Em um final de semana você entra de cabeça na tecnologia,
-                                        participa de dinâmicas, cria seu próprio projeto, constrói um aplicativo com
-                                        funcionalidades completas, entende como funciona um site e desenvolve o seu.</p>
-                                    <div class="btn-infos">
+                                <img class="card-img" src="assets/events/fds-2018.jpeg" alt="Formação de várias pessoas em um curso da Mastertech.">
+                                <div class="card-img-overlay ">
+                                    <h5 class="card-title">Aprenda a programar em um FDS</h5>
+                                    <div class="btn-infos d-flex justify-content-end" data-toggle="modal" data-target="#modalFDS">
                                         <button type="button" class="btn btn-infos btn-light">+ infos</button>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Eventos - Meetup Womakerscode -->
+                            <!-- Eventos/Cursos - Meetup Womakerscode -->
                             <div class="card text-white carousel-item">
                                 <img class="card-img" src="assets/events/study-group-1.jpg" alt="Seis mulheres sorrindo numa mesa com cadernos e posts-its.">
                                 <div class="card-img-overlay">
-                                    <h5 class="card-title">Meetup Womakerscode: Front-End Study Group #1</h5>
-                                    <p class="card-text">A primeira edição do Front-End Study Group contou com
-                                        palestras sobre frameworks, dentre eles React e Vue.js, Inteligência Artificial
-                                        (sua importância para facilitar a acessibilidade) e grupos de mentoria, onde
-                                        tivemos a formação de grupos para discussão de tópicos.</p>
-                                    <div class="btn-infos d-flex justify-content-end">
+                                    <h5 class="card-title">Front-End Study Group #1</h5>
+                                    <div class="btn-infos d-flex justify-content-end" data-toggle="modal" data-target="#modalFrontEndStudy">
                                         <button type="button" class="btn btn-infos btn-light">+ infos</button>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Eventos - Front In Sampa -->
+                            <!-- Eventos/Cursos - Front In Sampa -->
                             <div class="card text-white carousel-item">
                                 <img class="card-img" src="assets/events/front-in-sampa-2018.jpeg" alt="Cinco pessoas sorrindo na recepção do evento Front In Sampa 2018.">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">Front In Sampa 2018</h5>
-                                    <p class="card-text">O Front In Sampa é o mais tradicional evento
-                                        de front-end de São Paulo.</p>
-                                    <div class="btn-infos">
+                                    <div class="btn-infos d-flex justify-content-end" data-toggle="modal" data-target="#modalFrontInSP">
                                         <button type="button" class="btn btn-infos btn-light">+ infos</button>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Eventos - TDC 2018 -->
+                            <!-- Eventos/Cursos - TDC 2018 -->
                             <div class="card text-white carousel-item">
-                                <img class="card-img" src="assets/events/tdc-sp-2018.jpeg" alt="Card image">
+                                <img class="card-img" src="assets/events/tdc-sp-2018.jpeg" alt="Eu sorrindo com letreiro do TDC ao fundo.">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">TDC 2018</h5>
-                                    <p class="card-text">O TDC - The Developers Conference - é uma conferência de
-                                        desenvolvedores, cuja sua finalidade é reunir especialistas de vários segmentos
-                                        de TI (Tecnologia de Informação) e disseminar suas com os demais.</p>
-                                    <div class="btn-infos">
+                                    <div class="btn-infos d-flex justify-content-end" data-toggle="modal" data-target="#modalTDC">
                                         <button type="button" class="btn btn-infos btn-light">+ infos</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <section class="contact my-5">
-        <div class="container">
+    <div class="container">
+        <section id="contact" class="contact my-5">
             <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <h2 class="text-center">Contato</h2>
@@ -313,28 +316,27 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
 
     <footer class="footer p-4">
         <div class="container">
             <div class="footer-text">
-                <p class="footer-name">Thaylla Christine</p>
+                <p class="footer-name">Thaylla Christine - Desenvolvedora Front-End</p>
                 <p class="footer-number">+55 11 98124-5354</p>
-                <p class="footer-email">thayllachristineo@gmail.com</p>
+                <p class="footer-email">
+                    <a target="_blank" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=thayllachristineo@gmail.com&su=Contato - Currículo">
+                        thayllachristineo@gmail.com </a>
+                </p>
             </div>
             <div class="icons">
-                <a href="https://www.linkedin.com/in/thayllachristine/" class="icons-linkedin p-2">
+                <a target="_blank" href="https://www.linkedin.com/in/thayllachristine/" class="icons-linkedin p-2">
                     <img src="assets/icons/linkedin.svg" alt="Ícone do LinkedIn">
                 </a>
 
-                <a href="https://github.com/thayllachristine" class="icons-github p-2">
+                <a target="_blank" href="https://github.com/thayllachristine" class="icons-github p-2">
                     <img src="assets/icons/github.svg" alt="Ícone do GitHub">
-                </a>
-
-                <a href="https://twitter.com/thaychristine_" class="icons-twitter p-2">
-                    <img src="assets/icons/twitter.svg" alt="Ícone do Twitter">
                 </a>
             </div>
         </div>
@@ -342,66 +344,253 @@
 
 
     <!-- Modais-->
-    <!-- Projeto: Mundo Gelado -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    <!-- Projeto: M de Maravilhosa -->
+    <div class="modal fade" id="modalMMaravilhosa" tabindex="-1" role="dialog" aria-labelledby="modalMMaravilhosaTitle"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Projeto: Mundo Gelado</h5>
+                    <h5 class="modal-title" id="modalMMaravilhosaTitle">M de Maravilhosa</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="modal-body-img">
-                        <img src="assets/portfolio/mundo-gelado.png" alt="Página inicial do projeto Mundo Gelado.">
+                        <img src="assets/portfolio/m-maravilhosas-demi-lovato.JPG" alt="Página inicial do projeto M de Maravilhosas.">
                     </div>
                     <p class="mt-3 text-justify">
-                        O projeto <span class="font-weight-bold">Mundo Gelado</span> foi desenvolvido para aplicar o
-                        conteúdo de responsividade durante o segundo módulo do curso de Front-End da Reprograma.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta sequi ratione, delectus
+                        doloribus reprehenderit laboriosam repudiandae earum neque assumenda eaque optio! Officia
+                        nihil quo vitae illum error eveniet. A, exercitationem!
                     </p>
                     <div class="modal-body-rep">
-                        <span class="font-weight-bold">Repositório:</span>
-                        <span>github.com/reprograma/responsivo</span>
+                        Para visualizar o <span class="font-weight-bold">repositório</span>,
+                        <a target="_blank" href="https://github.com/thayllachristine/projeto-1_m-de-maravilhosa">clique
+                            aqui</a>!
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalCenterTitle">Projeto: Mundo Gelado</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+    </div>
+    <!-- Projeto: To Do List -->
+    <div class="modal fade" id="modalToDoList" tabindex="-1" role="dialog" aria-labelledby="modalToDoListTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalToDoListTitle">To Do List</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-img">
+                        <img src="assets/portfolio/to-do.png" alt="Página inicial do projeto 'To Do List'.">
                     </div>
-                    <div class="modal-body">
-                        <div class="modal-body-img">
-                            <img src="assets/portfolio/mundo-gelado.png" alt="Página de uma das mulheres maravilhosas  do projeto Mundo Gelado.">
-                        </div>
-                        <p class="mt-3 text-justify">
-                            O projeto <span class="font-weight-bold">Mundo Gelado</span> foi desenvolvido para aplicar
-                            o
-                            conteúdo de responsividade durante o segundo módulo do curso de Front-End da Reprograma.
-                        </p>
-                        <div class="modal-body-rep">
-                            <span class="font-weight-bold">Repositório:</span>
-                            <a href="http://github.com/reprograma/responsivo"></a>
-                        </div>
+                    <p class="mt-3 text-justify">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta sequi ratione, delectus
+                        doloribus reprehenderit laboriosam repudiandae earum neque assumenda eaque optio! Officia
+                        nihil quo vitae illum error eveniet. A, exercitationem!
+                    </p>
+                    <div class="modal-body-rep">
+                        Para visualizar o <span class="font-weight-bold">repositório</span>,
+                        <a href="#">clique aqui</a>!
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- Projeto: Campo Minado -->
+    <div class="modal fade" id="modalCampoMinado" tabindex="-1" role="dialog" aria-labelledby="modalCampoMinadoTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCampoMinadoTitle">Campo Minado</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-img">
+                        <img src="assets/portfolio/campo-minado.png" alt="Página inicial do projeto Campo Minado.">
+                    </div>
+                    <p class="mt-3 text-justify">
+                        O jogo Campo Minado foi desenvolvido durante as aulas da Reprograma para aplicação da
+                        biblioteca jQuery.
+                    </p>
+                    <div class="modal-body-rep">
+                        Para visualizar o <span class="font-weight-bold">repositório</span>,
+                        <a target="_blank" href="https://github.com/brizental/reprograma-jquery-4">clique aqui</a>!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projeto: Roda Livre -->
+    <div class="modal fade" id="modalRodaLivre" tabindex="-1" role="dialog" aria-labelledby="modalRodaLivreTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalRodaLivreTitle">Roda Livre</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-img">
+                        <img src="assets/portfolio/roda-livre.JPG" alt="Página inicial do projeto da ONG Roda Livre.">
+                    </div>
+                    <p class="mt-3 text-justify">
+                        Foi desenvolvido o site institucional da ONG Roda Livre por meio aptidões técnicas (HTML
+                        semântico, SASS/SCSS, Bootstrap e JavaScript) e ferramentas (GitHub Projects e Trello).
+                    </p>
+                    <div class="modal-body-rep">
+                        Para visualizar o <span class="font-weight-bold">repositório</span>,
+                        <a target="_blank" href="https://github.com/rodalivrebr/site">clique aqui</a>!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projeto: Projeto: tá chovendo? -->
+    <div class="modal fade" id="modalTaChovendo" tabindex="-1" role="dialog" aria-labelledby="modalTaChovendoTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTaChovendoTitle">tá chovendo?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-img">
+                        <img src="assets/portfolio/ta-chovendo.JPG" alt="Projeto: tá chovendo?.">
+                    </div>
+                    <p class="mt-3 text-justify">
+                        O 'tá chovendo?' foi desenvolvido como projeto final da Reprograma. Nele, foi utilizado React,
+                        Styled-Components, webpack, animações em CSS e consumo de uma API de previsão do tempo.
+                    </p>
+                    <div class="modal-body-rep">
+                        Para visualizar o <span class="font-weight-bold">repositório</span>,
+                        <a target="_blank" href="https://github.com/thayllachristine/tachovendo">clique
+                            aqui</a>!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- JS -->
-        <script src="js/jquery.slim.min.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>
+    <!-- Evento/Curso: Aprenda a programar em um final de semana -->
+    <div class="modal fade" id="modalFDS" tabindex="-1" role="dialog" aria-labelledby="modalFDSTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalFDSTitle">Aprenda a programar em um FDS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-img">
+                        <img src="assets/events/fds-2018.jpeg" alt="Formação de várias pessoas em um curso da Mastertech.">
+                    </div>
+                    <p class="mt-3 text-justify">
+                        Em um final de semana entrei de cabeça na tecnologia. Participei de dinâmicas, criei meu
+                        próprio projeto, construi um aplicativo
+                        simples e entendi como funciona um site.
+                    </p>
+                    <div class="modal-body-rep">
+                        Para visualizar o <span class="font-weight-bold">repositório</span>,
+                        <a target="_blank" href="https://github.com/thayllachristine/estacaohack">clique aqui</a>!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Evento/Curso: Front-End Study Group #1 -->
+    <div class="modal fade" id="modalFrontEndStudy" tabindex="-1" role="dialog" aria-labelledby="modalFrontEndStudyTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalFrontEndStudyTitle">Front-End Study Group #1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-img">
+                        <img src="assets/events/study-group-1.jpg" alt="Página inicial do projeto Mundo Gelado.">
+                    </div>
+                    <p class="mt-3 text-justify">
+                        Participei da 1ª edição do Front-End Study Group, que
+                        contou com palestras sobre frameworks (React e Vue), Inteligência Artificial
+                        e grupos de mentoria para discussão de tópicos, que viraram
+                        um artigo no <a target="_blank" href="https://medium.com/@thayllachristineo/o-guia-b%C3%A1sico-da-mochileira-front-end-dc790c621a77">Medium</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Evento/Curso: Front In Sampa 2018 -->
+    <div class="modal fade" id="modalFrontInSP" tabindex="-1" role="dialog" aria-labelledby="modalFrontInSPTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalFrontInSPTitle">Front In Sampa 2018 - Voluntariado</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-img">
+                        <img src="assets/events/front-in-sampa-2018.jpeg" alt="Cinco pessoas sorrindo na recepção do evento Front In Sampa 2018.">
+                    </div>
+                    <p class="mt-3 text-justify">
+                        Considerado o evento mais tradicional da comunidade de front-end, tive a imensa honra de
+                        participar como assistente de credenciamento e ter oportunidade de conhecer pessoas incríveis
+                        que atuam na área.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Evento/Curso: TDC 2018 -->
+    <div class="modal fade" id="modalTDC" tabindex="-1" role="dialog" aria-labelledby="modalTDCTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTDCTitle">TDC 2018 - Voluntariado</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-img">
+                        <img src="assets/events/tdc-sp-2018.jpeg" alt="Eu sorrindo com letreiro do TDC ao fundo.">
+                    </div>
+                    <p class="mt-3 text-justify">
+                        Durante 4 dias, conheci os bastidores de um dos maiores eventos de TI, onde promove um mix
+                        variado de assuntos, garantindo a interatividade entre as mais
+                        diversas comunidades tecnológicas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
