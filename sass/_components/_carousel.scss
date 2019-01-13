@@ -1,14 +1,19 @@
 .carousel {
+    &-indicators li {
+        border-radius: 12px;
+        width: 12px;
+        height: 12px;
+        background-color: gray;
+    }
+
     &-inner {
         .carousel-item {
             img {
                 height: 35vh;
                 object-fit: cover;
                 object-position: center;
-                opacity: .75;
+                opacity: .25;
             }  
         }
     }
 }
-
-
