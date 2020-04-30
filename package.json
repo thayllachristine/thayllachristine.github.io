@@ -4,7 +4,7 @@
   "description": "Portfólio criado na semana de Bootstrap",
   "main": "bootstrap.min.js",
   "dependencies": {
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.14.6",
     "sass": "^1.16.0",
     "bootstrap": "4.3.1"
